@@ -31,5 +31,10 @@ public class Main {
         list.pop();
         System.out.println("\nLinkedList after deleting the first element:");
         list.printList();
+
+        // Use Case 6
+        list.popLast();
+        System.out.println("\nLinkedList after deleting the last element:");
+        list.printList();
     }
 }
