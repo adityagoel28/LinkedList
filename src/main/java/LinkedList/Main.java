@@ -36,5 +36,12 @@ public class Main {
         list.popLast();
         System.out.println("\nLinkedList after deleting the last element:");
         list.printList();
+
+        // Use Case 7
+        list = new LinkedList();
+        list.add(70);
+        list.add(30);
+        list.add(56);
+        System.out.println("\nIs 30 present in the linked list? " + list.search(30));
     }
 }

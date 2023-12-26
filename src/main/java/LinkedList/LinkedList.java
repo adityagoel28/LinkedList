@@ -64,4 +64,15 @@ public class LinkedList<T> {
         }
         temp.next = null;
     }
+
+    public boolean search(T data) {
+        Node<T> temp = this.head;
+        while (temp != null) {
+            if (temp.data == data) {
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
+    }
 }
