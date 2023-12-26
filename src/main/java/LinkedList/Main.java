@@ -10,5 +10,12 @@ public class Main {
         list.add(56);
         System.out.println("LinkedList after adding elements:");
         list.printList();
+
+        list = new LinkedList();
+        list.append(56);
+        list.append(30);
+        list.append(70);
+        System.out.println("\nLinkedList after appending elements:");
+        list.printList();
     }
 }
