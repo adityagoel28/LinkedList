@@ -43,4 +43,10 @@ public class LinkedList<T> {
             prevNode.next = newNode;
         }
     }
+
+    public void pop() {
+        if (this.head != null) {
+            this.head = this.head.next;
+        }
+    }
 }
