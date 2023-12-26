@@ -20,4 +20,17 @@ public class LinkedList<T> {
         }
         System.out.println("null");
     }
+    // append
+    public void append(T data) {
+        Node<T> newNode = new Node(data); // Create a new node with the given data
+        if (this.head == null) { // If the linked list is empty, make the new node as the head node
+            this.head = newNode;
+            return;
+        }
+        Node<T> temp = this.head; // Starting traversing from the head node
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = newNode; // Make the new node as the last node
+    }
 }
