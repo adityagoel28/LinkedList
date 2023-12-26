@@ -11,11 +11,20 @@ public class Main {
         System.out.println("LinkedList after adding elements:");
         list.printList();
 
+        // Use Case 3
         list = new LinkedList();
         list.append(56);
         list.append(30);
         list.append(70);
         System.out.println("\nLinkedList after appending elements:");
+        list.printList();
+
+        // Use Case 4
+        list = new LinkedList();
+        list.append(56);
+        list.append(70);
+        list.insertAfter(list.head, 30);
+        System.out.println("\nLinkedList after inserting 30 between 56 and 70:");
         list.printList();
     }
 }

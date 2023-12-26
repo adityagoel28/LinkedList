@@ -33,4 +33,14 @@ public class LinkedList<T> {
         }
         temp.next = newNode; // Make the new node as the last node
     }
+
+    public void insertAfter(Node<T> prevNode, T data) {
+        if (prevNode == null) {
+            System.out.println("Previous node cannot be null");
+        } else {
+            Node<T> newNode = new Node(data);
+            newNode.next = prevNode.next;
+            prevNode.next = newNode;
+        }
+    }
 }
