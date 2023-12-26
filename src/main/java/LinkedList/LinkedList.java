@@ -49,4 +49,19 @@ public class LinkedList<T> {
             this.head = this.head.next;
         }
     }
+
+    public void popLast() {
+        if (this.head == null) {
+            return;
+        }
+        if (this.head.next == null) { // If there is only one element in the linked list, make the head node as null
+            this.head = null;
+            return;
+        }
+        Node<T> temp = this.head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
 }
