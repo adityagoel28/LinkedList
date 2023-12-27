@@ -43,5 +43,20 @@ public class Main {
         list.add(30);
         list.add(56);
         System.out.println("\nIs 30 present in the linked list? " + list.search(30));
+
+        // Use Case for inserting 40 after 30
+        list = new LinkedList<>();
+        list.append(56);
+        list.append(30);
+        list.append(70);
+        System.out.println("\nLinkedList before inserting 40:");
+        list.printList();
+
+        Node<Integer> node30 = list.findNode(30);
+        if (node30 != null) {
+            list.insertAfter(node30, 40);
+        }
+        System.out.println("LinkedList after inserting 40 after 30:");
+        list.printList();
     }
 }

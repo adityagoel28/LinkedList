@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf57317-1836-4581-b9ee-70ca19096723" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/Main.java" afterDir="false" />
     </list>
@@ -23,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2a5CBBI5qFE38gNMpsRhwxDliPN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "UC__7__Search__Element",
+    "git-widget-placeholder": "UC__8__Insert__After",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/adity/Documents/GitHub/Linked_List_Generics",
     "node.js.detected.package.eslint": "true",
@@ -57,7 +58,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703598915437</updated>
-      <workItem from="1703598916525" duration="2693000" />
+      <workItem from="1703598916525" duration="3073000" />
+      <workItem from="1703645260843" duration="24000" />
+      <workItem from="1703645475809" duration="822000" />
+      <workItem from="1703646486346" duration="16000" />
+      <workItem from="1703694050485" duration="528000" />
     </task>
     <servers />
   </component>
