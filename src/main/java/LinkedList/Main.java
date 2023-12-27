@@ -4,72 +4,73 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("LinkedList program!");
 
-        LinkedList<Integer> list = new LinkedList();
-        list.add(70);
-        list.add(30);
-        list.add(56);
+        SortedLinkedList<Integer> sortedList = new SortedLinkedList<>();
+
+        sortedList.add(70);
+        sortedList.add(30);
+        sortedList.add(56);
         System.out.println("LinkedList after adding elements:");
-        list.printList();
+        sortedList.printList();
 
         // Use Case 3
-        list = new LinkedList();
-        list.append(56);
-        list.append(30);
-        list.append(70);
+        sortedList = new SortedLinkedList<>();
+        sortedList.append(56);
+        sortedList.append(30);
+        sortedList.append(70);
         System.out.println("\nLinkedList after appending elements:");
-        list.printList();
+        sortedList.printList();
 
         // Use Case 4
-        list = new LinkedList();
-        list.append(56);
-        list.append(70);
-        list.insertAfter(list.head, 30);
+        sortedList = new SortedLinkedList<>();
+        sortedList.append(56);
+        sortedList.append(70);
+        sortedList.insertAfter(sortedList.head, 30);
         System.out.println("\nLinkedList after inserting 30 between 56 and 70:");
-        list.printList();
+        sortedList.printList();
 
         // Use Case 5
-        list.pop();
+        sortedList.pop();
         System.out.println("\nLinkedList after deleting the first element:");
-        list.printList();
+        sortedList.printList();
 
         // Use Case 6
-        list.popLast();
+        sortedList.popLast();
         System.out.println("\nLinkedList after deleting the last element:");
-        list.printList();
+        sortedList.printList();
 
         // Use Case 7
-        list = new LinkedList();
-        list.add(70);
-        list.add(30);
-        list.add(56);
-        System.out.println("\nIs 30 present in the linked list? " + list.search(30));
+        sortedList = new SortedLinkedList<>();
+        sortedList.add(70);
+        sortedList.add(30);
+        sortedList.add(56);
+        System.out.println("\nIs 30 present in the linked list? " + sortedList.search(30));
 
         // Use Case for inserting 40 after 30
-        list = new LinkedList();
-        list.append(56);
-        list.append(30);
-        list.append(70);
+        sortedList = new SortedLinkedList<>();
+        sortedList.append(56);
+        sortedList.append(30);
+        sortedList.append(70);
         System.out.println("\nLinkedList before inserting 40:");
-        list.printList();
+        sortedList.printList();
 
-        Node<Integer> node30 = list.findNode(30);
+        Node<Integer> node30 = sortedList.findNode(30);
         if (node30 != null) {
-            list.insertAfter(node30, 40);
+            sortedList.insertAfter(node30, 40);
         }
         System.out.println("LinkedList after inserting 40 after 30:");
-        list.printList();
+        sortedList.printList();
 
-        list = new LinkedList();
-        list.append(56);
-        list.append(30);
-        list.append(40);
-        list.append(70);
-        int length = list.size();
+        sortedList = new SortedLinkedList<>();
+        sortedList.append(56);
+        sortedList.append(30);
+        sortedList.append(40);
+        sortedList.append(70);
+        int length = sortedList.size();
         System.out.println(length);
-        list.deleteByKey(40);
+        sortedList.deleteByKey(40);
         System.out.println("LinkedList Size after deleting 40:");
-        length = list.size();
+        length = sortedList.size();
         System.out.println(length);
-        list.printList();
+        sortedList.printList();
     }
 }

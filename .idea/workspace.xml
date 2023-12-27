@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf57317-1836-4581-b9ee-70ca19096723" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/SortedLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "UC__8__Insert__After",
+    "git-widget-placeholder": "UC__10__Ordered__List",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/adity/Documents/GitHub/Linked_List_Generics",
     "node.js.detected.package.eslint": "true",
@@ -63,6 +63,7 @@
       <workItem from="1703645475809" duration="822000" />
       <workItem from="1703646486346" duration="16000" />
       <workItem from="1703694050485" duration="528000" />
+      <workItem from="1703694591288" duration="807000" />
     </task>
     <servers />
   </component>

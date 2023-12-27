@@ -1,15 +1,22 @@
 package LinkedList;
 
-public class LinkedList<T> {
+public class SortedLinkedList<T extends Comparable<T>> {
     Node<T> head;
-
-    LinkedList() {
-    }
 
     public void add(T data) {
         Node<T> newNode = new Node<>(data); // Create a new node with the given data
-        newNode.next = this.head; // Make the next of the new node as the head node
-        this.head = newNode; // Make the new node as the head node
+        // Check if the list is empty or if the new data should be inserted before the head
+        if (head == null || head.data.compareTo(data) > 0) {
+            newNode.next = head;
+            head = newNode;
+        } else {
+            Node<T> current = head;
+            while (current.next != null && current.next.data.compareTo(data) < 0) {
+                current = current.next;
+            }
+            newNode.next = current.next;
+            current.next = newNode;
+        }
     }
 
     public void printList() {
@@ -20,6 +27,7 @@ public class LinkedList<T> {
         }
         System.out.println("null");
     }
+
     // append
     public void append(T data) {
         Node<T> newNode = new Node<>(data); // Create a new node with the given data
