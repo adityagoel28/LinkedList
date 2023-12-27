@@ -86,4 +86,36 @@ public class LinkedList<T> {
         }
         return null;
     }
+
+    public void deleteByKey(T key) {
+        Node<T> temp = head, prev = null;
+
+        // If head node itself holds the key
+        if (temp != null && temp.data.equals(key)) {
+            head = temp.next; // Changed head
+            return;
+        }
+
+        // Search for the key to be deleted
+        while (temp != null && !temp.data.equals(key)) {
+            prev = temp;
+            temp = temp.next;
+        }
+
+        // If key was not present in linked list
+        if (temp == null) return;
+
+        // Unlink the node from linked list
+        prev.next = temp.next;
+    }
+
+    public int size() {
+        int count = 0;
+        Node<T> temp = head;
+        while(temp != null){
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
 }
