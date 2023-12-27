@@ -45,7 +45,7 @@ public class Main {
         System.out.println("\nIs 30 present in the linked list? " + list.search(30));
 
         // Use Case for inserting 40 after 30
-        list = new LinkedList<>();
+        list = new LinkedList();
         list.append(56);
         list.append(30);
         list.append(70);
@@ -57,6 +57,19 @@ public class Main {
             list.insertAfter(node30, 40);
         }
         System.out.println("LinkedList after inserting 40 after 30:");
+        list.printList();
+
+        list = new LinkedList();
+        list.append(56);
+        list.append(30);
+        list.append(40);
+        list.append(70);
+        int length = list.size();
+        System.out.println(length);
+        list.deleteByKey(40);
+        System.out.println("LinkedList Size after deleting 40:");
+        length = list.size();
+        System.out.println(length);
         list.printList();
     }
 }
