@@ -7,7 +7,7 @@ public class LinkedList<T> {
     }
 
     public void add(T data) {
-        Node<T> newNode = new Node(data); // Create a new node with the given data
+        Node<T> newNode = new Node<>(data); // Create a new node with the given data
         newNode.next = this.head; // Make the next of the new node as the head node
         this.head = newNode; // Make the new node as the head node
     }
@@ -22,7 +22,7 @@ public class LinkedList<T> {
     }
     // append
     public void append(T data) {
-        Node<T> newNode = new Node(data); // Create a new node with the given data
+        Node<T> newNode = new Node<>(data); // Create a new node with the given data
         if (this.head == null) { // If the linked list is empty, make the new node as the head node
             this.head = newNode;
             return;
@@ -38,7 +38,7 @@ public class LinkedList<T> {
         if (prevNode == null) {
             System.out.println("Previous node cannot be null");
         } else {
-            Node<T> newNode = new Node(data);
+            Node<T> newNode = new Node<>(data);
             newNode.next = prevNode.next;
             prevNode.next = newNode;
         }
@@ -74,5 +74,16 @@ public class LinkedList<T> {
             temp = temp.next;
         }
         return false;
+    }
+
+    public Node<T> findNode(T data) {
+        Node<T> temp = this.head;
+        while (temp != null) {
+            if (temp.data.equals(data)) {
+                return temp;
+            }
+            temp = temp.next;
+        }
+        return null;
     }
 }
